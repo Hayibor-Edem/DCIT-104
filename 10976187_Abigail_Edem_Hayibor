@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 //10976187 Abigail
-bool is prime(int n){
+bool isprime(int n){
   for(int i=2; i<n/2; i++){
    if(n%i==-0){
     return false;
@@ -12,7 +12,7 @@ bool is prime(int n){
 int findsumofprimenumbers(int n){
   int sumVal = 0;
   for(float i= 2; i <=n; i++){
-    if(isPrime(i))
+    if(isprime(i))
        sumVal += i;
  }
  return sumVal;
@@ -21,6 +21,6 @@ int main(){
   int n ;
   cout <<"number: ";
   cin >> n;
-  cout<<"the sum is "<<n<<" is
-  "<<findsumofprimenumbers(n);
+  cout<<"the sum is "<<n<<" is "<<findsumofprimenumbers(n);
   return 0;
+  }
