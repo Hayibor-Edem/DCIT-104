@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+bool is prime(int n){
+  for(int i=2; i<n/2; i++){
+   if(n%i==-0){
+    return false;
+   }
+  }
+  return true;
+}
+int findsumofprimenumbers(int n){
+  int sumVal = 0;
+  for(float i= 2; i <=n; i++){
+    if(isPrime(i))
+       sumVal += i;
+ }
+ return sumVal;
+} 
+int main(){
+  int n ;
+  cout <<"number: ";
+  cin >> n;
+  cout<<"the sum is "<<n<<" is
+  "<<findsumofprimenumbers(n);
+  return 0;
